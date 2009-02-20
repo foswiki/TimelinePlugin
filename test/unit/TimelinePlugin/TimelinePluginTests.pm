@@ -5,7 +5,7 @@ package TimelinePluginTests;
 use base qw(FoswikiTestCase);
 
 use strict;
-use TWiki;
+use Foswiki;
 use CGI;
 
 my $twiki;
@@ -21,7 +21,7 @@ sub set_up {
 
     $this->SUPER::set_up();
 
-    $TWiki::Plugins::SESSION = $twiki;
+    $Foswiki::Plugins::SESSION = $twiki;
 }
 
 sub tear_down {
