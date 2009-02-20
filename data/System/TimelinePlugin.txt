@@ -2,7 +2,7 @@
 ---+ Timeline Foswiki Plugin
 <img src="%ATTACHURLPATH%/timeline.jpg" alt="timeline.jpg" style="float:right;" />
 
-[[http://simile.mit.edu/timeline/][Timeline]] is a DHTML-based AJAXy widget for visualizing time-based events.
+[[http://code.google.com/p/simile-widgets/][Timeline]] is a DHTML-based AJAXy widget for visualizing time-based events.
 
 I use it to show a <nop>WebChanges timeline  with the query below.
 
@@ -104,7 +104,7 @@ format="<event start='$date' title='$topic' link='%SCRIPTURL{"view"}%/$web/$topi
 |  Plugin Author: | Foswiki:Main.SvenDowideit - <img src="%ATTACHURLPATH%/wikiringlogo20x20.png" /> http://WikiRing.com |
 |  Copyright: | Foswiki Plugin &copy; 2006-2009, SvenDowideit@fosiki.com |
 |             | The SIMILE Timeline software is sponsored by The Andrew W. Mellon Foundation  and is maintained by the SIMILE project, in particular: David François Huynh, dfhuynh at csail.mit.edu |
-|  Plugin License: | GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]]) |
+|  Plugin License: | GPL 3 ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]]) |
 |  SIMILE Timeline  License: | [[http://simile.mit.edu/license.html][BSD license]] |
 |  Plugin Version: | %$VERSION% - %$DATE% |
 |  Change History: | <!-- versions below in reverse order -->&nbsp; |
@@ -116,8 +116,6 @@ format="<event start='$date' title='$topic' link='%SCRIPTURL{"view"}%/$web/$topi
 |  Perl Version: | 5.005 |
 |  Bug reports: | %$BUGSURL% |
 |  Plugin Home: | http://foswiki.org/Extensions/%TOPIC% |
-|  Feedback: | http://foswiki.org/Extensions/%TOPIC%Dev |
-|  Appraisal: | http://foswiki.org/Extensions/%TOPIC%Appraisal |
 
 __Related Topics:__ [[%SYSTEMWEB%.Plugins][Plugins]], %SYSTEMWEB%.DeveloperDocumentationCategory, %SYSTEMWEB%.AdminDocumentationCategory, %SYSTEMWEB%.DefaultPreferences, %USERSWEB%.SitePreferences
 
