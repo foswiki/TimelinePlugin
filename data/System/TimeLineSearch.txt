@@ -2,7 +2,7 @@
 <?xml version="1.0" encoding="%CHARSET%" ?>
 <data>
 %SEARCH{
-".*" web="TWiki" regex="on" nototal="on" noheader="on" nosearch="on" 
+".*" web="%SYSTEMWEB%" regex="on" nototal="on" noheader="on" nosearch="on" 
 order="modified" limit="10" reverse="on"
 format="<event start=$quot$date GMT$quot title=$quot$topic$quot link=$quot%SCRIPTURL{"view"}%/$web/$topic$quot >$summary(noheader)</event>"}%
 </data>
