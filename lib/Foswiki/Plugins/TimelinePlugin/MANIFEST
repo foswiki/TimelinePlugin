@@ -6,10 +6,18 @@ templates/timelineplugin.tmpl
 
 
 
-pub
-pub/TWiki
-pub/System/TimelinePlugin
-pub/System/TimelinePlugin/images
+pub/System/TimelinePlugin/CHANGES.txt
+pub/System/TimelinePlugin/scripts/signal.js
+pub/System/TimelinePlugin/scripts/l10n/nl
+pub/System/TimelinePlugin/scripts/l10n/nl/labellers.js
+pub/System/TimelinePlugin/scripts/l10n/nl/timeline.js
+pub/System/TimelinePlugin/LICENSE.txt
+pub/System/TimelinePlugin/images/copy.png
+pub/System/TimelinePlugin/README.txt
+
+
+
+
 pub/System/TimelinePlugin/images/bubble-top-right.png
 pub/System/TimelinePlugin/images/bubble-bottom.png
 pub/System/TimelinePlugin/images/bubble-bottom-arrow.png
