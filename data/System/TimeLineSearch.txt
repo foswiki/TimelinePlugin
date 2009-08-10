@@ -2,9 +2,17 @@
 <?xml version="1.0" encoding="%CHARSET%" ?>
 <data>
 %SEARCH{
-".*" web="%SYSTEMWEB%" regex="on" nototal="on" noheader="on" nosearch="on" 
-order="modified" limit="10" reverse="on"
-format="<event start=$quot$date GMT$quot title=$quot$topic$quot link=$quot%SCRIPTURL{"view"}%/$web/$topic$quot >$summary(noheader)</event>"}%
+    ".*"
+    web="%SYSTEMWEB%"
+    regex="on"
+    nototal="on"
+    noheader="on"
+    nosearch="on" 
+    order="modified"
+    limit="10"
+    reverse="on"
+    format="<event start=$quot$date GMT$quot title=$quot$topic$quot link=$quot%SCRIPTURL{"view"}%/$web/$topic$quot >$summary(noheader)</event>"
+}%
 </data>
 
 %META:PREFERENCE{name="SKIN" title="SKIN" type="Set" value="xml"}%

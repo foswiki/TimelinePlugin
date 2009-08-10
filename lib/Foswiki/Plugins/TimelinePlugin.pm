@@ -72,12 +72,12 @@ sub _TIMELINE {
     
     my $orientation = 'Timeline.HORIZONTAL';
     #orientation="vertical"
-    if ($params->{orientation} eq 'vertical') {
+    if (defined($params->{orientation}) and $params->{orientation} eq 'vertical') {
         $orientation = 'Timeline.VERTICAL';
     }
     my $urltype = 'JSON';
     #urltype="JSON"
-    if ($params->{urltype} eq 'XML') {
+    if (defined($params->{urltype}) and $params->{urltype} eq 'XML') {
         $urltype = 'XML';
     }
 

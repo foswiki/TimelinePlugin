@@ -50,7 +50,7 @@ urltype="JSON"
 </verbatim>
 
 ---+++ Foswiki =SEARCH= based timeline
-This example uses the %SYSTEMWEB%.TimeLineSearchJSON topic to show the last 10 modified topics in all webs.
+This example uses the %SYSTEMWEB%.TimeLineSearchJSON topic to show the last 10 modified topics in the System,Main,Sandbox webs.
 
 
 %TIMELINE{
@@ -75,23 +75,34 @@ date="%DISPLAYTIME{"$day $month $year"}%"
 }%
 </verbatim>
 
-where TimeLineSearch contains
-<verbatim>
-<data>
-<!--
-   * Set <nop>SKIN = xml
+---+++ customising the SEARCH based timeline
+Using the URLPARAMs defined in %SYSTEMWEB%.TimeLineSearchJSON you can customise the output
 
-the format of and event:  
-   start="May 28 2006 09:00:00 GMT"
-   end="Jun 15 2006 09:00:00 GMT"
-   isDuration="true" 
-   title="Writing Timeline documentation" 
-   image="http://simile.mit.edu/images/csail-logo.gif" 
--->
-%SEARCH{
-".*" web="all" regex="on" nototal="on" noheader="on" nosearch="on" order="modified" reverse="on" limit="10"
-format="<event start='$date' title='$topic' link='%SCRIPTURL{"view"}%/$web/$topic' >$summary(noheader)</event>"}%
-</data>
+the currently defined params are:
+   * query - default to '1'
+   * querytype - defaults to 'query'
+   * webs - defaults to 'System,Main,Sandbox'
+   * tracknum - defaults to '' to use autolayout
+
+%TIMELINE{
+urltype="JSON"
+"%SCRIPTURL{view}%/%SYSTEMWEB%/TimeLineSearchJSON?contenttype=text/xml;query=1;querytype=query;webs=System"
+interval="YEAR"
+height="250px"
+width="700px"
+date="%DISPLAYTIME{"$day $month $year"}%"
+}%
+
+ 
+<verbatim>
+%TIMELINE{
+urltype="JSON"
+"%SCRIPTURL{view}%/%SYSTEMWEB%/TimeLineSearchJSON?contenttype=text/xml;query=1;querytype=query;webs=System"
+interval="YEAR"
+height="450px"
+width="700px"
+date="%DISPLAYTIME{"$day $month $year"}%"
+}%
 </verbatim>
 
 
@@ -108,6 +119,7 @@ format="<event start='$date' title='$topic' link='%SCRIPTURL{"view"}%/$web/$topi
 |  SIMILE Timeline  License: | [[http://simile.mit.edu/license.html][BSD license]] |
 |  Plugin Version: | %$VERSION% - %$DATE% |
 |  Change History: | <!-- versions below in reverse order -->&nbsp; |
+|  9 Aug 2009      | update to Timeline 2.3.0 |
 |  20 Feb 2009     | port to Foswiki and update to Timeline 2.2.0 |
 |  19 March 2008   | updated to Revision 9234: http://simile.mit.edu/repository/timeline/trunk/src/webapp/api and http://simile.mit.edu/repository/ajax/trunk/src/webapp/api/ , updated Plugin to add features.|
 |  22 July 2006: | Initial version |
